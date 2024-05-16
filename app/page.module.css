@@ -1,0 +1,12 @@
+.feedWrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .feedWrapper {
+    grid-template-columns: 50% auto;
+  }
+}

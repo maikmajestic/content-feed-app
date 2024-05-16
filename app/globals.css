@@ -1,0 +1,89 @@
+:root {
+  --max-width: 1100px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background: #FAFAFA;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto;
+  height: 100vh;
+}
+
+.feed-container {
+  grid-row: 2;
+  height: auto;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+nav {
+  background-image: linear-gradient(to right, #000, #14CAAE);
+  grid-row: 1;
+  height: 50px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .feed-container {
+    grid-column: 1;
+    padding: 2em;
+  }
+}
+
+.errorWrapper {
+  align-items: center;
+  background: rgb(15, 43, 99);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2em;
+}
+
+.errorTitle {
+  color: rgb(25, 181, 129);
+  font-size: 1em;
+}
+
+.errorMessage {
+  color: #eee;
+  font-size: 4em;
+  font-weight: 600;
+  margin: .5em 0;
+}
+
+.errorNote {
+  color: #9e9e9e;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.errorSupport {
+  color: #eee;
+  cursor: pointer;
+}
