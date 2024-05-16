@@ -28,7 +28,7 @@ export async function fetchContent(): Promise<{ data: ContentCard[] | null; erro
       }
     }
 
-    if (data) {
+    if (data && Array.isArray(data)) {
       data.sort((a, b) => b.metadata.priority - a.metadata.priority);
     }
     

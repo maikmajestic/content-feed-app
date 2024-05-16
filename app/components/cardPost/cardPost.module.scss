@@ -23,17 +23,16 @@
   text-align: end;
 }
 
-/* Aplicamos un ancho máximo al contenedor de texto */
 .cardPostTextContainer {
   margin-top: 10px;
-  width: 100%; /* Puedes ajustar el valor según tus necesidades */
+  width: 100%;
 }
 
 .cardPostBody {
   font-size: .7em;
   font-weight: 300;
-  max-width: 100%; /* Limita el ancho del texto */
-  word-wrap: break-word; /* Permite que el texto se divida en varias líneas */
+  max-width: 100%;
+  word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -88,8 +87,8 @@
 .commentBody {
   font-size: .7em;
   margin-bottom: 15px;
-  max-width: 100%; /* Limita el ancho del texto */
-  word-wrap: break-word; /* Permite que el texto se divida en varias líneas */
+  max-width: 100%;
+  word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -124,8 +123,8 @@
 }
 
 .likes {
-  color: #bfbfbf; /* Color rojo */
-  font-size: 12px; /* Tamaño del corazón */
+  color: #bfbfbf; 
+  font-size: 12px;
 }
 
 .likesCount {
